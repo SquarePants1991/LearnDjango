@@ -1,0 +1,13 @@
+{% load static %}
+<div>
+        <ul>
+            {% if students %}
+            {% for student in students %}
+                <div>
+                    <a href="{% url 'student_detail' student.id %}"> {{ student.name }} </a>
+                </div>
+            {% endfor %}
+            {% endif %}
+        </ul>
+        <a href="{% static 'student_managment/test.json' %}">{% static 'student/test.json' %}</a>
+</div>
