@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 """
 
 import os
+import sys
+sys.path.append('/Library/Python/3.6/site-packages')  
+sys.path.append('/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages')  
 
 from django.core.wsgi import get_wsgi_application
 

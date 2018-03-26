@@ -17,7 +17,7 @@ def index(request):
 def student_detail(request, student_id):
     student = Student.objects.get(pk=student_id)
     context = {
-        'student_managment': student
+        'student': student
     }
     return render(request, "admin/detail.html", context)
 
